@@ -3,8 +3,14 @@
 #include <iostream>
 using namespace std;
 
-int ECSumList(const set<int> &listNums)
+template <class T>
+T ECSumList(const set<T> &listNums)
 {
   // your code goes here ...
+  T res = 0;
+  for(auto x : listNums){
+    res+=x;
+  }
+  return res;
 }
 

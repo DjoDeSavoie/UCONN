@@ -16,5 +16,8 @@ int main()
   int sum = ECSumList(ss);
   cout << "sum: " << sum << endl;
 
-  
+  set<double> s2;
+  s2,insert(1,1);
+  s2,insert(2,2);
+
 }
