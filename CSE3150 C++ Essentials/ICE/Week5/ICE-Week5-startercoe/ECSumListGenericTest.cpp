@@ -16,12 +16,19 @@ int main()
   int sum = ECSumList(vec);
   cout << "sum1: " << sum << endl;
 
-  set<double> ss;
-  ss.insert(5.0);
-  ss.insert(3.0);
-  ss.insert(3.0);
-  ss.insert(0.0);
-  ss.insert(1.0);
-  double sum2 = ECSumList(ss);
-  cout << "sum2: " << sum2 << endl;
+  set<int> s1;
+  s1.insert(2);
+  s1.insert(5);
+  cout << "sum of s1 : " << s1 << endl;
+
+  // set<double> ss;
+  // ss.insert(5.0);
+  // ss.insert(3.0);
+  // ss.insert(3.0);
+  // ss.insert(0.0);
+  // ss.insert(1.0);
+  // double sum2 = ECSumList(ss);
+  // cout << "sum2: " << sum2 << endl;
+
+  return 0;
 }
