@@ -6,7 +6,8 @@ using namespace std;
 // I want to have a generic function that can work with any types of numbers 
 // AND any type of container. Is this possible?
 template <class T>;
-int ECSumList(const vector<int> &listNums)
+
+int ECSumList(const T &listNums)
 {
   // your code goes here ...
   T res = 0;
