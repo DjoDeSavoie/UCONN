@@ -111,7 +111,6 @@ node *delete_node(node *head, int v) {
 
   //check if the list is empty
   if(head == NULL){
-    error_message(ERR_OK);
     printf("The list is empty \n");
     return NULL;
   }
@@ -125,7 +124,6 @@ node *delete_node(node *head, int v) {
     head = head->next;
     free(temp);
 
-    error_message(ERR_OK);
     return head;//and return the next values of the list
   }
 
@@ -135,7 +133,6 @@ node *delete_node(node *head, int v) {
   }
 
   if(currHead->next == NULL) {
-    printf("This value is not in the list \n");
     error_message(ERR_NOTFOUND);
     return head;
   }
@@ -146,8 +143,6 @@ node *delete_node(node *head, int v) {
   node * nodeToDelete = currHead->next;
   currHead->next = nodeToDelete->next;
   free(nodeToDelete);
-
-  error_message(ERR_OK);
 
   return head;
 }
