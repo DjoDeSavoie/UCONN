@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "funcDecla.C": "cpp",
+        "typeinfo": "c"
+    }
+}
